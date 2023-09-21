@@ -1,14 +1,3 @@
-# class Test:
-#     def sum(self,*a):
-#         total=0
-#         for x in a:
-#             total=total+x
-#             print('The Sum:',total)
-# t=Test()
-# t.sum(10,20)
-# t.sum(10,20,30)
-# t.sum(10)
-# t.sum()
 
 import math
 class ShapeCalculator:
@@ -25,19 +14,19 @@ class ShapeCalculator:
         else:
             raise ValueError(f"Invalid shape: {shape_name}")
 
-    def calculate_rectangle_area(self, length, width):
+    def calculate_rectangle_area(self, length=0, width=0):
         if isinstance(length, (int, float)) and isinstance(width, (int, float)) and length >= 0 and width >= 0:
             return length * width
         else:
             raise ValueError("Invalid arguments for rectangle")
 
-    def calculate_circle_area(self, radius):
+    def calculate_circle_area(self, radius=0):
         if isinstance(radius, (int, float)) and radius >= 0:
             return math.pi * radius ** 2
         else:
             raise ValueError("Invalid argument for circle")
 
-    def calculate_triangle_area(self, base, height):
+    def calculate_triangle_area(self, base=0, height=0):
         if isinstance(base, (int, float)) and isinstance(height, (int, float)) and base >= 0 and height >= 0:
             return 0.5 * base * height
         else:
