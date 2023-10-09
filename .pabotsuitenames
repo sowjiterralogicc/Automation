@@ -1,0 +1,6 @@
+datasources:84868e22389c05091e0335f5e343429f3f801011
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:50981074e6d21eb5fa7df7f46620fc9671ba0511
+--suite Suites.Subscribing
+--suite Suites.Wynk

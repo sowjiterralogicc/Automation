@@ -1,0 +1,24 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DF9FE528]
+	(No symbol) [0x00007FF7DFA83B77]
+	(No symbol) [0x00007FF7DFA975BF]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Update User Profile</title>
 </head>
 <body>
-$END$
-</body>
-</html>
+    <h2>Update User Profile</h2>
+    <form method="POST">
+        <label for="new_name">New Name:</label>
+        <input type="text" id="new_name" name="new_name" value="{{ user_profile['name'] }}" required>
+
+        <label for="new_email">New Email:</label>
+        <input type="text" id="new_email" name="new_email" value="{{ user_profile['email'] }}" required>
+        <label for="new_address">New Address:</label>
+        <input type="text" id="new_address" name="new_address" value="{{ user_profile['address'] }}" required>
+
+        <input type="submit" value="Update Profile">
+    </form>
+    <h3>Updated User Profile:</h3>
+    <p>Name: {{ user_profile['name'] }}</p>
+    <p>Email: {{ user_profile['email'] }}</p>
+    <p>Email: {{ user_profile['address'] }}</p>

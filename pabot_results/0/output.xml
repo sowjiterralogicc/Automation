@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231009 14:52:53.984" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Subscribing" source="C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\Sowjanya\subscribing.robot">
+<test id="s1-s1-t1" name="Lanch The YouTube Browser" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.youtube.com/@RajiRaji-nd4sg</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 14:52:54.256" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/@RajiRaji-nd4sg'.</msg>
+<status status="PASS" starttime="20231009 14:52:54.255" endtime="20231009 14:53:10.841"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231009 14:53:10.843" endtime="20231009 14:53:11.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//yt-button-shape[.='Sign in'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231009 14:53:11.078" level="INFO">Clicking element 'xpath:(//yt-button-shape[.='Sign in'])[1]'.</msg>
+<status status="PASS" starttime="20231009 14:53:11.075" endtime="20231009 14:53:12.576"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 14:53:17.577" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231009 14:53:12.577" endtime="20231009 14:53:17.577"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:identifierId</arg>
+<arg>sowjanya.n@terralogic.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 14:53:17.580" level="INFO">Typing text 'sowjanya.n@terralogic.com' into text field 'id:identifierId'.</msg>
+<status status="PASS" starttime="20231009 14:53:17.577" endtime="20231009 14:53:17.883"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[.='Next']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231009 14:53:17.884" level="INFO">Clicking element 'xpath://span[.='Next']'.</msg>
+<status status="PASS" starttime="20231009 14:53:17.883" endtime="20231009 14:53:18.205"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 14:53:23.206" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231009 14:53:18.205" endtime="20231009 14:53:23.206"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Passwd</arg>
+<arg>Ammu1998@17</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 14:53:23.207" level="INFO">Typing text 'Ammu1998@17' into text field 'name:Passwd'.</msg>
+<status status="PASS" starttime="20231009 14:53:23.207" endtime="20231009 14:53:23.370"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[.='Next']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231009 14:53:23.371" level="INFO">Clicking element 'xpath://span[.='Next']'.</msg>
+<status status="PASS" starttime="20231009 14:53:23.370" endtime="20231009 14:53:23.574"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 14:53:38.575" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20231009 14:53:23.574" endtime="20231009 14:53:38.575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://div[@id='subscribe-button']//yt-smartimation/yt-button-shape/button</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20231009 14:53:38.584" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DF9FE528]
+	(No symbol) [0x00007FF7DFA83B77]
+	(No symbol) [0x00007FF7DFA975BF]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+</msg>
+<msg timestamp="20231009 14:53:38.635" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DF9FE528]
+	(No symbol) [0x00007FF7DFA83B77]
+	(No symbol) [0x00007FF7DFA975BF]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+</msg>
+<status status="FAIL" starttime="20231009 14:53:38.575" endtime="20231009 14:53:38.843"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[@id='subscribe-button']//yt-smartimation/yt-button-shape/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.843" endtime="20231009 14:53:38.843"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${channel_name}</var>
+<arg>xpath://div[@id='meta']//div[@id='text-container']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.843" endtime="20231009 14:53:38.844"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Name of the Channel: ${channel_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.844" endtime="20231009 14:53:38.844"/>
+</kw>
+<kw name="Get All Links" library="SeleniumLibrary">
+<var>${links}</var>
+<doc>Returns a list containing ids of all links found in current page.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.844" endtime="20231009 14:53:38.845"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${links_count}</var>
+<arg>${links}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.845" endtime="20231009 14:53:38.845"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total Links in the URL: ${links_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.845" endtime="20231009 14:53:38.846"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${all_elements}</var>
+<arg>xpath://*</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.846" endtime="20231009 14:53:38.846"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${elements_count}</var>
+<arg>${all_elements}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.847" endtime="20231009 14:53:38.847"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total Elements in the URL: ${elements_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.848" endtime="20231009 14:53:38.848"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.850" endtime="20231009 14:53:38.850"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@id="video-title"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.851" endtime="20231009 14:53:38.851"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.851" endtime="20231009 14:53:38.852"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//div[@class="yt-spec-touch-feedback-shape__fill"])[21]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.852" endtime="20231009 14:53:38.852"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.853" endtime="20231009 14:53:38.853"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${num_likes}</var>
+<arg>xpath:(//span[@class="yt-core-attributed-string yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--text-alignment-center yt-core-attributed-string--word-wrapping"])[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.853" endtime="20231009 14:53:38.854"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total likes: ${num_likes}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:53:38.854" endtime="20231009 14:53:38.854"/>
+</kw>
+<status status="FAIL" starttime="20231009 14:52:54.254" endtime="20231009 14:53:38.855">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DF9FE528]
+	(No symbol) [0x00007FF7DFA83B77]
+	(No symbol) [0x00007FF7DFA975BF]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+</status>
+</test>
+<status status="FAIL" starttime="20231009 14:52:54.027" endtime="20231009 14:53:38.856"/>
+</suite>
+<status status="FAIL" starttime="20231009 14:52:54.003" endtime="20231009 14:53:38.858"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Subscribing">Suites.Subscribing</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231009 14:53:38.584" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DF9FE528]
+	(No symbol) [0x00007FF7DFA83B77]
+	(No symbol) [0x00007FF7DFA975BF]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+</msg>
+</errors>
+</robot>

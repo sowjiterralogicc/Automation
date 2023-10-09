@@ -1,0 +1,60 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Wynk                                                                   
+==============================================================================
+TestAmazonLogin                                                       | PASS |
+------------------------------------------------------------------------------
+LoginTowynk                                                           | PASS |
+------------------------------------------------------------------------------
+soundquality                                                          Qualitycheck
+| PASS |
+------------------------------------------------------------------------------
+playsongs                                                             | PASS |
+------------------------------------------------------------------------------
+recentlyplayed                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\Sowjanya\wynk.robot:38
+    T:  recentlyplayed    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\Sowjanya\wynk.robot:41
+      Click Element    xpath://a[@title="Recently Played"]/div/span/span
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">...</span> is not clickable at point (758, 542). Other element would receive the click: <div class="flex-grow text-center flex items-center justify-center sm:flex-1">...</div>
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DFBF7D12+55474]
+	(No symbol) [0x00007FF7DFB677C2]
+	(No symbol) [0x00007FF7DFA1E0EB]
+	(No symbol) [0x00007FF7DFA64E7B]
+	(No symbol) [0x00007FF7DFA63249]
+	(No symbol) [0x00007FF7DFA61018]
+	(No symbol) [0x00007FF7DFA600D3]
+	(No symbol) [0x00007FF7DFA55DCF]
+	(No symbol) [0x00007FF7DFA7F15A]
+	(No symbol) [0x00007FF7DFA556E6]
+	(No symbol) [0x00007FF7DFA7F370]
+	(No symbol) [0x00007FF7DFA97EF2]
+	(No symbol) [0x00007FF7DFA7EF33]
+	(No symbol) [0x00007FF7DFA53D41]
+	(No symbol) [0x00007FF7DFA54F84]
+	GetHandleVerifier [0x00007FF7DFF5B762+3609346]
+	GetHandleVerifier [0x00007FF7DFFB1A80+3962400]
+	GetHandleVerifier [0x00007FF7DFFA9F0F+3930799]
+	GetHandleVerifier [0x00007FF7DFC93CA6+694342]
+	(No symbol) [0x00007FF7DFB72218]
+	(No symbol) [0x00007FF7DFB6E484]
+	(No symbol) [0x00007FF7DFB6E5B2]
+	(No symbol) [0x00007FF7DFB5EE13]
+	BaseThreadInitThunk [0x00007FFA6D8A257D+29]
+	RtlUserThreadStart [0x00007FFA6F06AA68+40]
+------------------------------------------------------------------------------
+Suites.Wynk                                                           | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\pabot_results\1\output.xml
