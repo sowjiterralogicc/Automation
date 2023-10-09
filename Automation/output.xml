@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231009 14:47:35.454" rpa="false" schemaversion="4">
+<suite id="s1" name="Subscribing" source="C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\Automation\subscribing.robot">
+<test id="s1-t1" name="Lanch The YouTube Browser" line="10">
+<kw name="Open Browser">
+<arg>https://www.youtube.com/@RajiRaji-nd4sg</arg>
+<arg>Chrome</arg>
+<msg timestamp="20231009 14:47:35.503" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20231009 14:47:35.503" endtime="20231009 14:47:35.503"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20231009 14:47:35.505" endtime="20231009 14:47:35.505"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath:(//yt-button-shape[.='Sign in'])[1]</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.509" endtime="20231009 14:47:35.509"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.509" endtime="20231009 14:47:35.509"/>
+</kw>
+<kw name="Input Text">
+<arg>id:identifierId</arg>
+<arg>sowjanya.n@terralogic.com</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.511" endtime="20231009 14:47:35.511"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath://span[.='Next']</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.514" endtime="20231009 14:47:35.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.515" endtime="20231009 14:47:35.515"/>
+</kw>
+<kw name="Input Text">
+<arg>name:Passwd</arg>
+<arg>Ammu1998@17</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.517" endtime="20231009 14:47:35.517"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath://span[.='Next']</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.520" endtime="20231009 14:47:35.520"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.521" endtime="20231009 14:47:35.521"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>xpath://div[@id='subscribe-button']//yt-smartimation/yt-button-shape/button</arg>
+<arg>timeout=10</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.524" endtime="20231009 14:47:35.524"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath://div[@id='subscribe-button']//yt-smartimation/yt-button-shape/button</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.526" endtime="20231009 14:47:35.527"/>
+</kw>
+<kw name="Get Text">
+<var>${channel_name}</var>
+<arg>xpath://div[@id='meta']//div[@id='text-container']</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.531" endtime="20231009 14:47:35.531"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Name of the Channel: ${channel_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.532" endtime="20231009 14:47:35.532"/>
+</kw>
+<kw name="Get All Links">
+<var>${links}</var>
+<status status="NOT RUN" starttime="20231009 14:47:35.534" endtime="20231009 14:47:35.534"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${links_count}</var>
+<arg>${links}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.535" endtime="20231009 14:47:35.535"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total Links in the URL: ${links_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.535" endtime="20231009 14:47:35.535"/>
+</kw>
+<kw name="Get Webelements">
+<var>${all_elements}</var>
+<arg>xpath://*</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.538" endtime="20231009 14:47:35.538"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${elements_count}</var>
+<arg>${all_elements}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.538" endtime="20231009 14:47:35.538"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total Elements in the URL: ${elements_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.538" endtime="20231009 14:47:35.538"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.540" endtime="20231009 14:47:35.540"/>
+</kw>
+<kw name="Click ELement">
+<arg>xpath://span[@id="video-title"]</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.542" endtime="20231009 14:47:35.542"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.543" endtime="20231009 14:47:35.543"/>
+</kw>
+<kw name="Click ELement">
+<arg>xpath:(//div[@class="yt-spec-touch-feedback-shape__fill"])[21]</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.545" endtime="20231009 14:47:35.545"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.546" endtime="20231009 14:47:35.546"/>
+</kw>
+<kw name="Get Text">
+<var>${num_likes}</var>
+<arg>xpath:(//span[@class="yt-core-attributed-string yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--text-alignment-center yt-core-attributed-string--word-wrapping"])[1]</arg>
+<status status="NOT RUN" starttime="20231009 14:47:35.548" endtime="20231009 14:47:35.548"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}Total likes: ${num_likes}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231009 14:47:35.549" endtime="20231009 14:47:35.549"/>
+</kw>
+<status status="FAIL" starttime="20231009 14:47:35.501" endtime="20231009 14:47:35.549">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20231009 14:47:35.456" endtime="20231009 14:47:35.552"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Subscribing">Subscribing</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231009 14:47:35.489" level="ERROR">Error in file 'C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\Automation\subscribing.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\venv\Scripts\robot.exe
+  C:\Users\Sowjanya N-3147\Downloads\Radio_Sanity\Radio_Sanity\library
+  C:\Users\Sowjanya N-3147\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Sowjanya N-3147\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Sowjanya N-3147\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Sowjanya N-3147\AppData\Local\Programs\Python\Python311
+  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\venv
+  C:\Users\Sowjanya N-3147\PycharmProjects\ramp_up_python\venv\Lib\site-packages</msg>
+</errors>
+</robot>
